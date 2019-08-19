@@ -19,7 +19,7 @@ TRC은 현재 스터디를 중심으로 활동하며 스터디의 주제는 리�
 
 ## 🗄️ Projects 
 
-* 팀 블로그 (http://archive.pppr.io)
+* 팀 블로그 <https://archive.pppr.io>
 
 ## 🚀 How to join
 
