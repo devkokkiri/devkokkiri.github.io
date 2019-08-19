@@ -9,17 +9,21 @@ title: About
 
 TRC은 현재 스터디를 중심으로 활동하며 스터디의 주제는 리버싱, 보안개발, 웹, 암호학, 포렌식등 다양한 분야에 대한 자료&지식 공유를 기반으로 발전해 나가는 방식입니다. 이를 통해 팀 단위로 국/내외 Ctf, Wargame등에 참여하여 경험을 쌓아 미래의 보안리더를 꿈꾸는 팀입니다.
 
+
 ## 😝 Members 
 
 * 👑 코 끼리 (admin@pppr.io)
+
 
 ## 📜 History 
 
 * 08-19-2019    등장 !
 
+
 ## 🗄️ Projects 
 
 * 팀 블로그 <https://archive.pppr.io>
+
 
 ## 🚀 How to join
 
