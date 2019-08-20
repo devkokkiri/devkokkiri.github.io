@@ -8,8 +8,10 @@ layout: default
 
 <h2>War-games</h2>
 
-<p>reversing.kr <code id="revkrscore" class="highlighter-rouge"></code></p>
-<p>pwnable.kr <code id="pwnkrscore" class="highlighter-rouge"></code></p>
+<ul>
+  <li><p>reversing.kr <code id="revkrscore" class="highlighter-rouge"></code></p></li>
+  <li><p>pwnable.kr <code id="pwnkrscore" class="highlighter-rouge"></code></p></li>
+<ul>
 
 <script>
 $(document).ready(function() {
@@ -19,7 +21,7 @@ $(document).ready(function() {
     url : "https://status.pppr.io:8080/wargame",
     success : function(data) {
       $("#revkrscore")[0].textContent = data.revkr[1]+"/"+data.revkr[0];
-      $("#pwnkrscore")[0].textContent = data.pwnkr[1]+"/"+data.pwnkr[1];
+      $("#pwnkrscore")[0].textContent = data.pwnkr[1]+"/"+data.pwnkr[0];
     },
     error : function(e) {
       alert('서버 연결 도중 에러가 났습니다. 다시 시도해 주십시오.');
