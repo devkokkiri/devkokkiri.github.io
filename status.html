@@ -10,7 +10,6 @@ layout: default
 <ul>
   <li><p>reversing.kr <code id="revkrscore" class="highlighter-rouge"></code></p></li>
   <li><p>pwnable.kr <code id="pwnkrscore" class="highlighter-rouge"></code></p></li>
-  <li><p>ctf.j0n9hyun.xyz <code id="jhctfscore" class="highlighter-rouge"></code></p></li>
 </ul>
 
 <h2>Collaboration Services</h2>
@@ -28,7 +27,6 @@ $(document).ready(function() {
     success : function(data) {
       $("#revkrscore")[0].textContent = data.revkr[1]+"/"+data.revkr[0];
       $("#pwnkrscore")[0].textContent = data.pwnkr[1]+"/"+data.pwnkr[0];
-      $("#jhctfrscore")[0].textContent = data.jhctf[1]+"/"+data.jhctf[0];
     },
     error : function(e) {
       alert('서버 연결 도중 에러가 났습니다. 다시 시도해 주십시오.');
