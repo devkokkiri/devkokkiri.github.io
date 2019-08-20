@@ -3,8 +3,13 @@ layout: default
 ---
 
 <h1>🚀-🐆@home:~$: service --status-all</h1>
-
+<hr>
 <p>현재 Rocket-Cougar팀에서 제공되는 서비스 및 CTF 상황을 실시간으로 확인할 수 있습니다.</p>
+
+<h2>War-games</h2>
+
+<p>reversing.kr <code id="revkrscore" class="highlighter-rouge"></code></p>
+<p>pwnable.kr <code id="pwnkrscore" class="highlighter-rouge"></code></p>
 
 <script>
 $(document).ready(function() {
@@ -13,7 +18,8 @@ $(document).ready(function() {
     dataType : "jsonp",
     url : "https://status.pppr.io:8080/wargame",
     success : function(data) {
-      console.log(data.revkr)
+      $("#revkrscore")[0].textContent = data.revkr[1]+"/"+data.revkr[0];
+      $("#pwnkrscore")[0].textContent = data.pwnkr[1]+"/"+data.pwnkr[1];
     },
     error : function(e) {
       alert('서버 연결 도중 에러가 났습니다. 다시 시도해 주십시오.');
