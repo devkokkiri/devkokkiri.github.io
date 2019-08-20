@@ -5,3 +5,29 @@ layout: default
 <h1>🚀-🐆@home:~$: service --status-all</h1>
 
 <p>현재 Rocket-Cougar팀에서 제공되는 서비스 및 CTF 상황을 실시간으로 확인할 수 있습니다.</p>
+
+<script>
+$(document).ready(function() {
+  var jsonData = JSON.stringify(obj);
+  $.ajax({
+    type : "GET",
+    dataType : "json",
+    url : "http://status.pppr.io:8080/wargame",
+    data : {
+      json : jsonData
+    },
+    success : function(data) {
+      if (data.answer == 'success') {
+        alert(data.revkr[0]);
+      } else if (data.answer == 'fail') {
+        alert('접속에 실패했습니다.');
+      } else if (data.answer == 'error') {
+        alert('원활한 접속이 이루어 지지 못했습니다. 관리자에게 문의하십시오.');
+      }
+    },
+    error : function(e) {
+      alert('서버 연결 도중 에러가 났습니다. 다시 시도해 주십시오.');
+    }
+  });
+}
+</script>
