@@ -8,7 +8,6 @@ layout: default
 
 <script>
 $(document).ready(function() {
-  var jsonData = JSON.stringify(obj);
   $.ajax({
     type : "GET",
     dataType : "json",
@@ -17,17 +16,11 @@ $(document).ready(function() {
       json : jsonData
     },
     success : function(data) {
-      if (data.answer == 'success') {
-        alert(data.revkr[0]);
-      } else if (data.answer == 'fail') {
-        alert('접속에 실패했습니다.');
-      } else if (data.answer == 'error') {
-        alert('원활한 접속이 이루어 지지 못했습니다. 관리자에게 문의하십시오.');
-      }
+      console.log(data)
     },
     error : function(e) {
       alert('서버 연결 도중 에러가 났습니다. 다시 시도해 주십시오.');
     }
   });
-}
+});
 </script>
