@@ -12,11 +12,8 @@ $(document).ready(function() {
     type : "GET",
     dataType : "json",
     url : "http://status.pppr.io:8080/wargame",
-    data : {
-      json : jsonData
-    },
     success : function(data) {
-      console.log(data)
+      console.log(data.revkr)
     },
     error : function(e) {
       alert('서버 연결 도중 에러가 났습니다. 다시 시도해 주십시오.');
