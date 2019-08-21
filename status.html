@@ -29,7 +29,8 @@ $(document).ready(function() {
       $("#pwnkrscore")[0].textContent = data.pwnkr[1]+"/"+data.pwnkr[0];
     },
     error : function(e) {
-      alert('서버 연결 도중 에러가 났습니다. 다시 시도해 주십시오.');
+      $("#revkrscore")[0].textContent = "nil";
+      $("#pwnkrscore")[0].textContent = "nil";
     }
   });
 });
