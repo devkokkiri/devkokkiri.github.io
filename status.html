@@ -10,6 +10,7 @@ layout: default
 <ul>
   <li><p>reversing.kr <code id="revkrscore" class="highlighter-rouge"></code></p></li>
   <li><p>pwnable.kr <code id="pwnkrscore" class="highlighter-rouge"></code></p></li>
+  <li><p>suninatas.com <code id="suninatasscore" class="highlighter-rouge"></code></p></li>
 </ul>
 
 <h2>Collaboration Services</h2>
@@ -27,10 +28,12 @@ $(document).ready(function() {
     success : function(data) {
       $("#revkrscore")[0].textContent = data.revkr[1]+"/"+data.revkr[0];
       $("#pwnkrscore")[0].textContent = data.pwnkr[1]+"/"+data.pwnkr[0];
+      $("#suninatasscore")[0].textContent = data.suninatas[0]+"/"+data.suninatas[1];
     },
     error : function(e) {
       $("#revkrscore")[0].textContent = "nil";
       $("#pwnkrscore")[0].textContent = "nil";
+      $("#suninatasscore")[0].textContent = "nil";
     }
   });
 });
