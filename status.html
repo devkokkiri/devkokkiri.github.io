@@ -28,7 +28,7 @@ $(document).ready(function() {
     success : function(data) {
       $("#revkrscore")[0].textContent = data.revkr[1]+"/"+data.revkr[0];
       $("#pwnkrscore")[0].textContent = data.pwnkr[1]+"/"+data.pwnkr[0];
-      $("#suninatasscore")[0].textContent = data.suninatas[0]+"/"+data.suninatas[1];
+      $("#suninatasscore")[0].textContent = data.suninatas[1]+"/"+data.suninatas[0];
     },
     error : function(e) {
       $("#revkrscore")[0].textContent = "nil";
