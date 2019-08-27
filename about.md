@@ -12,8 +12,6 @@ TRC는 현재 스터디를 중심으로 활동하며 스터디의 주제는 리�
 
 ## 😝 Members 
 
-* 🔮 rev3rs3r (<rev3rs3r@gmail.com>) : Reversing
-
 * 🐘 코 끼리 (<admin@pppr.io>) : 리버싱은 존-버다.
 
 * 🌊 bsangs (<tkdals6805@naver.com>) : NULL
